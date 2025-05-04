@@ -108,7 +108,7 @@ function update_lines(){
 
     if(!purple && !yellow && !green){
         map.setAttribute('src', 'HE_Background1.png');
-    }else if(purple && !yellow && !green){
+    }else if(purple && yellow && !green){
         map.setAttribute('src', 'HE_Purpleandyellow.png');
     }else if(!purple && yellow && !green){
         map.setAttribute('src', 'HE_just_yellow.png');
@@ -134,21 +134,21 @@ function update_lines(){
         <div style="display: table-row;">Bus Lines:</div>
         <div style="display: table-row">
             <div style="display: table-cell;">
-                Purple Line:
+                Purple bus:
                 <label class="switch">
                     <input type="checkbox" onChange="update_lines();" class="purple">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div style="display: table-cell;">
-                Yellow Line:
+                Yellow bus:
                 <label class="switch">
                     <input type="checkbox" onChange="update_lines();" class="yellow">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div style="display: table-cell;">
-                Green Line:
+                Green bus:
                 <label class="switch">
                     <input type="checkbox" onChange="update_lines();" class="green">
                     <span class="slider round"></span>
