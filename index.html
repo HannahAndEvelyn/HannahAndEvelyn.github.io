@@ -12,7 +12,7 @@
     .center-fit {
         max-width: 100%;
         max-height: 100vh;
-        margin: none;
+        margin: auto;
     }
     .switch {
       position: relative;
@@ -92,7 +92,7 @@
       border-radius: 50%;
     }
     .center {
-        margin: auto;
+        margin: none;
         width: 50%;
         border: 3px solid rgb(164, 127, 7);
         padding: 10px;
@@ -130,38 +130,45 @@ function update_lines(){
 <body style="background-color:#fff3c5">
 <div style="padding: 10px;"></div>
 
-
-<div class="imgbox">
-    <div class="center">
-        <div style="width: 100%; display: table;">
-            <div style="display: table-row;"></div>
-            <div style="display: table-row">
-                <div style="display: table-cell;">
-                    <b> Purple bus:</b>
-                    <label class="switch">
-                        <input type="checkbox" onChange="update_lines();" class="purple">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div style="display: table-cell;">
-                    <b>Yellow bus:</b>
-                    <label class="switch">
-                        <input type="checkbox" onChange="update_lines();" class="yellow">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div style="display: table-cell;">
-                    <b>Green bus:</b>
-                    <label class="switch">
-                        <input type="checkbox" onChange="update_lines();" class="green">
-                        <span class="slider round"></span>
-                    </label>
+<center>
+    <div class="imgbox">
+        <div class="center">
+            <div style="width: 100%; display: table;">
+                <div style="display: table-row;"></div>
+                <div style="display: table-row">
+                    <div style="display: table-cell;">
+                        <b> Purple bus:</b>
+                        <label class="switch">
+                            <input type="checkbox" onChange="update_lines();" class="purple">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div style="display: table-cell;">
+                        <b>Yellow bus:</b>
+                        <label class="switch">
+                            <input type="checkbox" onChange="update_lines();" class="yellow">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div style="display: table-cell;">
+                        <b>Green bus:</b>
+                        <label class="switch">
+                            <input type="checkbox" onChange="update_lines();" class="green">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <img src="HE_Background1.png" class="center-fit" alt="Map">
+        <img src="HE_Background1.png" class="center-fit" alt="Map">
+</center>
 
+    <article>
+        <h1>Welcome to Hannah & Evelyn's Wedding Map!</h1>
+        <p>Bus Stops:  </p>
+        <p>Bus Stop 1.</p>
+    </article>
+        
 </div>
 </body>
 </html>
